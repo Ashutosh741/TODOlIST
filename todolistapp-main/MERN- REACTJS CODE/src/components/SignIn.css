@@ -1,0 +1,65 @@
+#sign-in header {
+  padding: 1rem 8rem;
+}
+
+#sign-in header h1 {
+  color: white;
+}
+
+#sign-in main {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+#sign-in main h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+#sign-in main section input {
+  padding: 0.7rem 1rem;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 1.1rem;
+  width: 300px;
+  color: #fff;
+  caret-color: #fff;
+  font-size: 1.1rem;
+}
+
+#sign-in main section input::placeholder {
+  color: #84849b;
+  font-size: 1rem;
+}
+
+#sign-in main section button {
+  width: 200px;
+  padding: 0.7rem;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+
+  background: linear-gradient(45deg, #3bb0db, #4368e8);
+}
+
+#sign-in main p {
+  margin-top: 3rem;
+}
+
+#sign-in main p .link {
+  all: unset;
+  margin-left: 1rem;
+  margin-top: 3rem;
+  font-weight: 800;
+  cursor: pointer;
+}

@@ -1,0 +1,5 @@
+#####NOTE#####
+# I am leaving this .env file blank...it's your task to identify the vulnerable # informationa to be stored as environment variable..
+
+# Hint : You will need to install a package called (dotenv) npm install dotenv
+# One more hint : all information like private key etc..will be needed to be stored as environment varibale...

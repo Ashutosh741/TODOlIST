@@ -1,0 +1,182 @@
+#todo {
+  height: 100%;
+}
+#todo header {
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #21212b;
+}
+
+#todo header h1 {
+  margin-right: auto;
+  color: #d2d2d2;
+}
+
+#todo header .sign-out {
+  padding: 0.7rem 1.8rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  background: gray;
+}
+
+#todo header .profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#todo header .profile-img img {
+  height: 100%;
+}
+
+#todo main {
+  display: flex;
+  align-items: stretch;
+  color: white;
+  height: 90vh;
+}
+
+#todo main nav {
+  flex-basis: 20%;
+  background-color: #21212b;
+  margin: 0.7rem 0;
+  border-radius: 0 18px 18px 0;
+  padding: 4rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#todo main nav .option {
+  background-color: #4b4b4b;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#todo main nav .option.active {
+  background-color: gray;
+}
+
+#todo main nav .option * {
+  pointer-events: none;
+}
+
+/* todos  */
+/* #todo section.todo-container > div:not(.all-tasks) {
+  display: none;
+} */
+
+#todo section.todo-container {
+  flex-basis: 60%;
+  max-height: 100%;
+  margin: 4rem auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  overflow: auto;
+}
+
+section.todo-container::-webkit-scrollbar {
+  appearance: none;
+}
+
+.todo-container > div {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2.5rem; */
+}
+
+.todo-container > div h2 {
+  font-size: 2.4rem;
+}
+
+.todo-container > div h3 {
+  margin-top: 0.5rem;
+}
+
+.todo-container .todos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.todos .todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+
+  background-color: #272732;
+  border-radius: 15px;
+  padding: 0.9rem 1.2rem;
+}
+
+.todo input {
+  width: 25px;
+  height: 25px;
+}
+.todo p {
+  flex: 1;
+}
+.todo input:checked + p {
+  text-decoration: line-through;
+}
+
+.todo span.priority {
+  width: 12px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.todo span.priority.urgent {
+  background-color: #bb3f3f;
+}
+.todo span.priority.regular {
+  background-color: rgb(43, 168, 43);
+}
+.todo span.priority.low {
+  background-color: #f3f34b;
+}
+
+.todo button {
+  background-color: transparent;
+  border: none;
+  width: 20px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.todo button img {
+  width: 100%;
+  pointer-events: none;
+}
+
+#todo main .add-todo-ic {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  cursor: pointer;
+}
+
+#todo main .add-todo-ic img {
+  width: 4rem;
+  cursor: pointer;
+}
+
+#todo .add-todo-btn {
+  cursor: pointer;
+}
